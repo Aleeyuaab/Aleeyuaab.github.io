@@ -1,4 +1,8 @@
+   body{
 
+	   margin: 0;
+	   padding: 0;
+   }
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -232,7 +236,7 @@ transform: translateY(0) scale(1); opacity: 1;
   .Skills {
    display: grid;
    gap: 55px;
-   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
    margin-top: 400px;
    justify-content: center;
    align-items: center;
@@ -240,6 +244,7 @@ transform: translateY(0) scale(1); opacity: 1;
    transition: 4s;
    width: 100%;
    box-sizing: border-box;
+	  over-flow: hidden;
   }
   
    .Skills h3 {
