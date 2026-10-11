@@ -59,6 +59,9 @@
   
   @media (min-width: 600px) {
   .hero_image img {
+	object-fit: cover;
+	aspect-ratio: 1/1;
+	max-width: 250px;
 	width: 90% !important; 
 	height: 100px;
 	object-fit:cover;
@@ -75,14 +78,14 @@
 	}
  }
   
-  @media (max-width: 480px) {
+  @media (max-width: 600px) {
   .hero_image {
 	  text-align:center; padding:28px 6% 10px;
 	}
   }
   
   
-  @media (max-width: 480px){
+  @media (max-width: 600px){
   .Skills h3 {
    color: green;
    font-size: 35px;
@@ -257,7 +260,7 @@ transform: translateY(0) scale(1); opacity: 1;
   box-shadow: 1px 1px 1px  rgba(16,80, 0.8, 0.5);
   border-left: 5px solid green;
   padding: 28px;
-  width: 80%;
+  width: 90%;
   max-width: 320px;
   animation: Scroll_animation 1s linear both;
   animation-timeline: view();
@@ -326,7 +329,7 @@ transform: translateY(0) scale(1); opacity: 1;
 	 background: #f8fdf8;
 	 border-left: 5px solid #4CAF50;
 	 padding: 20px;
-	 margin: 10px 0;
+	 margin: 25px 0;
 	 border-radius: 10px;0;
 	 border-radius: 10px;
  }
