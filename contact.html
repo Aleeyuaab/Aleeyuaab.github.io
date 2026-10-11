@@ -1,0 +1,130 @@
+<!Doctype html>
+<html lang="ha">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/jpg" href="IMG-20260918-WA3287.jpg">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<title>Contact me</title>
+<style>
+:root{--blue:#0d6efd;--bg:#f4f7fb;--white:#fff;--black:#0f172a;--gray:#64748b;}
+*{box-sizing:border-box;}
+body{font-family:'Segoe UI',system-ui,sans-serif; background:var(--bg); margin:0; padding:0;}
+.hero{text-align:center; padding:28px 6% 10px;}
+.hero img{width:110px; height:125px; object-fit:cover; border-radius:50%; border:4px solid transparent; box-shadow:0 10px 28px rgba(13,110,253,0.25); animation:float 4s ease-in-out infinite; margin: 35px 25px;}
+@keyframes float{0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)}} padding:12px 20px; border-radius:12px; font-weight:700; font-size:13px; box-shadow:0 8px 20px rgba(13,110,253,0.25);}
+.title{font-weight:800; font-size:26px; color:var(--black); margin:22px 0 4px;}
+
+.form-wrap{max-width:680px; margin:0 auto; background:white; border-radius:22px; border:1px solid #e2e8f0; padding:26px; box-shadow:0 10px 30px rgba(0,0,0,0.05);}
+.group{margin-bottom:16px; animation:shigo 0.5s both;}
+.group:nth-child(1){animation-delay:0.05s} .group:nth-child(2){animation-delay:0.1s} .group:nth-child(3){animation-delay:0.15s} .group:nth-child(4){animation-delay:0.2s} .group:nth-child(5){animation-delay:0.25s} .group:nth-child(6){animation-delay:0.3s} .group:nth-child(7){animation-delay:0.35s} .group:nth-child(8){animation-delay:0.4s} .group:nth-child(9){animation-delay:0.45s}
+@keyframes shigo{from{opacity:0; transform:translateY(14px)} to{opacity:1; transform:translateY(0)}}
+label{display:block; font-size:12px; font-weight:700; color:var(--black); margin-bottom:6px; letter-spacing:0.3px;}
+label i{color:var(--blue); margin-right:6px;}
+label span{color:#ef4444;}
+.input, select, textarea{
+  width:100%; padding:13px 14px; border:1.5px solid #e2e8f0; border-radius:12px; background:#f8fafc;
+  font-size:14px; font-weight:500; transition:0.25s; outline:none;
+}
+.input:focus, select:focus, textarea:focus{background:white; border-color:transparent; box-shadow:0 0 0 4px rgba(13,110,253,0.12);}
+textarea{resize:vertical; min-height:120px;}
+
+.gender-box{display:flex; gap:10px;}
+.gender{flex:1; padding:12px; border:1.5px solid #e2e8f0; border-radius:12px; text-align:center; cursor:pointer; transition:0.25s; background:#f8fafc; font-weight:600; font-size:13px;}
+.gender.active{background: lightgreen; color:white; border-color:white;}
+.gender input{display:none;}
+
+.btn-submit{
+  width:100%; background: green; color:white; border:none; padding:14px; border-radius:30px;
+  font-weight:800; font-size:14px; letter-spacing:0.3px; margin-top:10px; transition:0.3s;
+  box-shadow:0 8px 20px rgba(0,0,0,0.2); display:flex; align-items:center; justify-content:center; gap:8px;
+}
+
+.footer{text-align:center; background: seagreen; color: white; font-size: 28px; margin-top: 75px; border-radius: 12px;}
+.footer b{color:white;}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <img src="IMG-20260918-WA3287.jpg">
+</div>
+
+<div class="form-wrap">
+<form id="contactForm" action="https://formspree.io/f/xyklelrw" method="POST">
+
+  <div class="group">
+    <label><i class="fas fa-user"></i> First_name<span>*</span></label>
+    <input class="input" type="text" name="Suna" required placeholder="e.g, Muhammad">
+  </div>
+
+  <div class="group">
+    <label><i class="fas fa-user-tag"></i> Sure_name <span>*</span></label>
+    <input class="input" type="text" name="Sunan_Mahaifi" required placeholder="e.g, Abubakar">
+  </div>
+
+  <div class="group">
+    <label><i class="fas fa-phone"></i> Phone <span>*</span></label>
+    <input class="input" type="tel" name="Wayar" required placeholder="+234 80 8236 9545">
+  </div>
+
+  <div class="group">
+    <label><i class="fas fa-envelope"></i> Email <label>
+    <input class="input" type="email" name="Email" placeholder="@example.com">
+  </div>
+
+  <div class="row g-2">
+    <div class="col-6 group">
+      <label><i class="fas fa-calendar"></i> Date <span>*</span></label>
+      <input class="input" type="date" name="Kwanan_Wata" required>
+    </div>
+    <div class="col-6 group">
+      <label><i class="fas fa-map-marker-alt"></i> Location <span>*</span></label>
+      <input class="input" type="text" name="Wuri" required placeholder="Bodinga">
+    </div>
+  </div>
+
+  <div class="group">
+    <label><i class="fas fa-venus-mars"></i> Gender</label>
+    <div class="gender-box">
+      <label class="gender" onclick="setGender(this,'Namiji')"><input type="radio" name="Jinsi" value="Namiji" required> <i class="fas fa-mars"></i> Male</label>
+      <label class="gender" onclick="setGender(this,'Mace')"><input type="radio" name="Jinsi" value="Mace"> <i class="fas fa-venus"></i> Female</label>
+    </div>
+  </div>
+
+
+  <div class="group">
+    <label><i class="fas fa-pen"></i> Your / Service need / Feedback / Recommendations <span>*</span></label>
+    <textarea name="Sako" required placeholder=" Please specify here..."></textarea>
+  </div>
+
+  <button type="submit" class="btn-submit" id="submitBtn"><i class="fas fa-paper-plane"></i> Submit</button>
+</form>
+</div>
+
+
+<script>
+function setGender(el,val){
+  document.querySelectorAll('.gender').forEach(g=>g.classList.remove('active'));
+  el.classList.add('active');
+  el.querySelector('input').checked=true;
+}
+const form=document.getElementById('contactForm');
+const btn=document.getElementById('submitBtn');
+form.addEventListener('submit', function(e){
+  btn.innerHTML='<i class="fas fa-spinner fa-spin"></i> Sending...';
+  btn.disabled=true;
+  // Formspree will send th message, after 3sec then refresh the page
+  setTimeout(()=>{btn.innerHTML='<i class="fas fa-check"></i> Your message has been sent successfully! Thank you for contacting Us.'; btn.style.background='#22c55e';},1600);
+});
+</script>
+
+<div class="footer">
+  <div> • Practice • Learning • Consistency </div>
+  <div style="margin-top:100px;">&copy 2026 Aliyu Adamu Bodinga | All Rights Reserved</div>
+</div>
+
+</body>
+</html>
