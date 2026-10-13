@@ -245,6 +245,7 @@ transform: translateY(0) scale(1); opacity: 1;
    width: 100%;
    box-sizing: border-box;
 	  over-flow: hidden;
+	  max-width: 680px;
   }
   
    .Skills h3 {
