@@ -265,11 +265,11 @@ transform: translateY(0) scale(1); opacity: 1;
   box-shadow: 1px 1px 1px  rgba(16,80, 0.8, 0.5);
   border-left: 5px solid green;
   padding: 28px;
-  width: 90%;
+  width: 100%;
   max-width: 320px;
   animation: Scroll_animation 1s linear both;
   animation-timeline: view();
-  animation-range: entry 20% cover 40%;		  
+  animation-range: entry 0% cover 50%;		  
   }
   
    .Skills .box:hover {   
