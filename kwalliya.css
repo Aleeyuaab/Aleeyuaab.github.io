@@ -257,16 +257,18 @@ transform: translateY(0) scale(1); opacity: 1;
    }
   
   .Skills .box {
-  border: 2px solid lightgray;
-  border-radius: 15px;
-  justify-content: center;
-  align-items: center;
-  background: seagreen;
-  box-shadow: 1px 1px 1px  rgba(16,80, 0.8, 0.5);
-  border-left: 5px solid green;
-  padding: 28px;
+  background-color: #0a7a3d; /* your dark green */
+  color: white;
   width: 100%;
-  max-width: 320px;
+  max-width: 400px; /* don't be too wide on big phone */
+  padding: 18px 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0 auto; /* center it */
+  cursor: pointer;
   animation: Scroll_animation 1s linear both;
   animation-timeline: view();
   animation-range: entry 0% cover 50%;		  
